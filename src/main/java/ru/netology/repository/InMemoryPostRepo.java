@@ -1,8 +1,7 @@
 package ru.netology.repository;
 
-import org.springframework.stereotype.Repository;
-
 import ru.netology.domain.Post;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
