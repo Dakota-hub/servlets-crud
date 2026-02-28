@@ -1,7 +1,6 @@
 package ru.netology.repository;
 
 import ru.netology.domain.Post;
-import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +8,6 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
-@Repository
 public class InMemoryPostRepo implements PostRepository {
     private final Map<Integer, Post> posts = new ConcurrentHashMap<>();
     private final AtomicInteger counter = new AtomicInteger(0);

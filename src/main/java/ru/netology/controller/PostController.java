@@ -4,17 +4,16 @@ import com.google.gson.Gson;
 import jakarta.servlet.http.HttpServletResponse;
 import ru.netology.domain.Post;
 import ru.netology.service.PostService;
-import org.springframework.stereotype.Controller;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.stream.Collectors;
-@Controller
+
 public class PostController {
     private final PostService service;
     private final Gson gson;
-    @Autowired
+
     public PostController(PostService service) {
         this.service = service;
         this.gson = new Gson();
