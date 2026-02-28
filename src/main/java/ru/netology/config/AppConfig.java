@@ -1,7 +1,9 @@
 package ru.netology.config;
 
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages = "ru.netology")
 public class AppConfig {
-    public static final String CONTENT_TYPE = "application/json;charset=utf-8";
-    public static final String POSTS_URL = "/posts";
-    public static final String POSTS_URL_ID = "/posts/";
 }
